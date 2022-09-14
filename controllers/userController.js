@@ -29,6 +29,16 @@ const userPut = (req, res = response ) => {
     })
 }
 
+const userPatch = (req, res = response ) => {
+
+    const id = req.params.id;
+
+    res.json({
+        msg:'patch API - Controller' ,
+        id
+    })
+}
+
 const userDelete =  (req, res = response ) => {
     res.json({
         msg:'Delete API - Controller'
@@ -40,5 +50,6 @@ module.exports = {
     userGet,
     userPost,
     userPut,
-    userDelete
+    userDelete, 
+    userPatch
 }

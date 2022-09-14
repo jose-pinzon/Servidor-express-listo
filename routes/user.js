@@ -6,9 +6,12 @@ const router = Router()
 
 router.get('/', userGet )
 
+router.post('/', userPost)
+
 router.put('/:id', userPut ) 
 
-router.post('/', userPost)
+router.patch('/', userPatch)
+
 
 router.delete('/', userDelete)
 
